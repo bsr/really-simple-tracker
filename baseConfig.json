@@ -1,0 +1,35 @@
+{
+    "defaults": {
+        "thing": "time"
+    },
+    "things": {
+        "time": {
+            "description": "track time",
+            "options": {
+                "time": {
+                    "name": "time",
+                    "shortName": "t",
+                    "dataType": "time",
+                    "description": "how long the thing was in minutes"
+                }
+            }
+        },
+        "workout": {
+            "description": "track a workout",
+            "options": {
+                "time": {
+                    "name": "time",
+                    "shortName": "t",
+                    "dataType": "time",
+                    "description": "how long the workout was in minutes"
+                },
+                "calories": {
+                    "name": "calories",
+                    "shortName": "c",
+                    "dataType": "calories",
+                    "description": "how many calories expended"
+                }
+            }
+        }
+    }
+}

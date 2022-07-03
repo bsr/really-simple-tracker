@@ -1,0 +1,33 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "globals": {
+        "__RewireAPI__": "writable"
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "requireConfigFile": false,
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "impliedStrict": true
+        }
+    },
+    "extends": ["eslint:recommended", "plugin:import/recommended", "prettier"],
+    "rules": {
+        "linebreak-style": ["error", "unix"],
+        "semi": ["error", "always"],
+        "no-console":"warn",
+        "no-unused-vars":"warn",
+        "handle-callback-err":"error",
+        "no-case-declarations":"warn",
+        "no-useless-escape":"warn",
+        "space-before-blocks": ["error", "always"],
+        "keyword-spacing": ["error"]
+    },
+    "plugins": []
+}
