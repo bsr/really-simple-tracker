@@ -22,12 +22,14 @@
         "linebreak-style": ["error", "unix"],
         "semi": ["error", "always"],
         "no-console":"warn",
+        "no-undef":"error",
         "no-unused-vars":"warn",
         "handle-callback-err":"error",
         "no-case-declarations":"warn",
         "no-useless-escape":"warn",
         "space-before-blocks": ["error", "always"],
-        "keyword-spacing": ["error"]
+        "keyword-spacing": ["error"],
+        "require-await": "warn"
     },
     "plugins": []
 }

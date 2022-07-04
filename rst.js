@@ -1,10 +1,10 @@
 #!env node
 import config from "./lib/config.js";
-import argv from "./lib/optionsParsing.js";
+import { argv, appArgs } from "./lib/optionsParsing.js";
 import { init, configFile, appDir } from "./lib/utils.js";
 import { track, setDefaultThing, argvToThingOptions } from "./lib/thing.js";
 
-console.log("argv:", argv);
+// console.log("argv:", argv);
 if (argv.verbose) {
     console.log("argv:", argv);
 }
@@ -47,9 +47,15 @@ if (argv["show-defaults"]) {
     process.exit(0);
 }
 
+if (argv["_"].length == 0) {
+    appArgs.showHelp();
+    process.exit(1);
+}
+
 // track the thing
 try {
     await track(argv.thing.toString(), argvToThingOptions(argv.thing, argv));
+    console.log(`${argv.thing.toString()} saved`);
 } catch (err) {
     console.error(err.message);
     process.exit(1);
