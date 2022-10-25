@@ -1,6 +1,8 @@
 # really-simple-tracker
 A really simple "thing" tracker.  Designed to allow one to record small pieces of structured data and display them in a simple calendar format.  Inspired by the [Simone Giertz every day calendar](https://yetch.store/products/every-day-goal-calendar) - but with a the capacity to record a little more data behind it.
 
+It's a work in progress.
+
 ## Usage
 
 ![help](docs/img/help.gif)
@@ -17,6 +19,5 @@ A really simple "thing" tracker.  Designed to allow one to record small pieces o
 
 ### Adding new things
 
-
-## Display options
+Edit `~/.rst/config.json` to add more things
 
